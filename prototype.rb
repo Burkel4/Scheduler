@@ -34,7 +34,22 @@ class UserInterface
         then print "Invalid attendance number \n"
       end
       end
+    
+      def availableRooms()
+        print "Please enter the file name for unreserved rooms \n"
+        unusedRooms = gets.chomp
+        print "Please enter the file name for reserved rooms \n"
+        usedRooms = gets.chomp
+        print "Please enter the output file name \n"
+        output = gets.chomp
+        if unusedRooms =~ /[\w+\-.]\.csv/
+        else print "Invalid file name for unreserved rooms \n"
+        end
+        if usedRooms =~ /[\w+\-.]\.csv/
+        else print "Invalid file name for reserved rooms \n"
+        end
+        if output =~ /[\w+\-.]\.csv/
+        else print "Invalid output file title \n"
+        end
+      end
 end
-
-prototype = UserInterface.new()
-prototype.eventDate()
