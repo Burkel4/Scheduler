@@ -1,3 +1,9 @@
+# Project name: Assignment 1 Scheduler
+# Description: Develop a module, called Scheduler, that will schedule rooms for large events, based on availability, capacity, seating, and other characteristics.
+# Filename: all_rooms.rb
+# Description: Creates available room objects designed to be instantiated for each entry of room information, allowing for organized storage and retrieval of data related to various rooms.
+# Last modified on: 3/8/2024
+
 class All_rooms
     attr_reader :building, :room, :capacity, :computers_available, :seating_available, :food_allowed, :priority, :room_type
     
